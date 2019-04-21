@@ -1,0 +1,20 @@
+default.value: state service
+
+
+spring:
+ datasource:
+  url: jdbc:postgresql://localhost:5432/micros
+  username: admin
+  password: '{cipher}8d019da9258be93ac1ff19342160d9994c0e3cba08be596097b28e2cf2d1a371'
+  initialization-mode: always	#not required with H2 but required in other
+
+ jpa:
+  properties:
+   hibernate:
+    dialect: org.hibernate.dialect.PostgreSQLDialect
+    temp:
+     use_jdbc_metadata_defaults: false
+  hibernate:
+    ddl-auto: create-drop				
+
+

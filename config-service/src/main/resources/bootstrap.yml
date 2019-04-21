@@ -1,0 +1,4 @@
+encrypt:
+  key: secretkey-secretkey-secretkey
+
+##symetric key encription should be placed in bootstrap.yml
